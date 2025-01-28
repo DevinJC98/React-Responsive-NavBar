@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7e2c3;
+  padding: 2%;
+  max-height: 20vh;
+  box-shadow: 0px 0px 10px black;
+}
+#beany {
+  max-width: 30vw;
+}
+#burger {
+  display: none;
+  max-width: 8vw;
+}
+
+#burgerMenu {
+  flex-direction: column;
+  width: 100%;
+  background-color: #794c1d;
+  padding: 2%;
+}
+#burgerMenu a {
+  color: #e7e2c3;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  line-height: 2;
+  animation-duration: 0.5s;
+  animation-name: openTheText;
+}
+.openBurger {
+  display: flex;
+}
+.closedBurger {
+  display: none;
+}
+
+#links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0px solid black;
+  padding: 2%;
+}
+#links a {
+  color: #794c1d;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#links a:hover {
+  scale: 1.2;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 3%;
+  }
+  #links a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #burger {
+    display: block;
+  }
+
+  #links {
+    display: none;
+  }
+}
+
+@keyframes openTheText {
+  from {
+    line-height: 0;
+    visibility: hidden;
+  }
+  to {
+    line-height: 2;
+    visibility: visible;
+  }
+}
