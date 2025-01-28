@@ -1,6 +1,6 @@
 Start Instructions:
 
-To start application open the terminal, cd to the Responsive-navbar folder, and use the command "npm run dev" then go to the localhost url provided.
+To start application open the foler in the terminal and use the command "npm run dev", then go to the localhost url provided.
 
 To test the hamburger menu functionality, resize the window to a width equal to or below 768px.
 
